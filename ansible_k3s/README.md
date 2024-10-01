@@ -20,14 +20,3 @@
 #and copy them to folders:
 # ./roles/k3s_agent/files/ 
 # ./roles/k3s_install/files/
-
-
-
-#sudo mkdir -p /var/lib/rancher/k3s/agent/images/
-#sudo cp ./k3s-airgap-images-amd64.tar /var/lib/rancher/k3s/agent/images/
-#sudo cp ./k3s-selinux-0.4-1.el8.noarch.rpm /var/lib/rancher/k3s/agent/images/
-#sudo cp ./k3s /usr/local/bin
-#sudo cp ./install.sh /usr/local/bin
-
-
-
