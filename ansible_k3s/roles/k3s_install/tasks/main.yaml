@@ -1,0 +1,25 @@
+---
+- name: Copy K3s binary
+  copy:
+    src: k3s
+    dest: /usr/local/bin/k3s
+    mode: '0755'
+
+- name: Copy K3s airgap images
+  copy:
+    src: k3s-airgap-images-amd64.tar
+    dest: /var/lib/rancher/k3s/agent/images/k3s-airgap-images-amd64.tar
+
+
+- name: Copy Install script
+  copy:
+    src: install.sh
+    dest: /usr/local/bin/install.sh
+    mode: '0755'
+
+- name: Install K3s agent
+  ansible.builtin.shell:
+    cmd: INSTALL_K3S_SKIP_DOWNLOAD=true ./install.sh server
+
+
+...

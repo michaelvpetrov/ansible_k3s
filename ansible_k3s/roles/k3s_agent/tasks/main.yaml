@@ -1,0 +1,9 @@
+---
+---
+# tasks file for agent
+
+- name: install k3s on agent
+  ansible.builtin.shell: 
+    cmd: INSTALL_K3S_SKIP_DOWNLOAD=true K3S_URL=https://node1:6443 K3S_TOKEN="{{ K3S_TOKEN }}" ./install.sh
+
+...
