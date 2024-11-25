@@ -11,5 +11,7 @@
 > chmod +x install.sh
 
 ### copy files to folders:
+```
 >./roles/k3s_agent/files/ 
 > ./roles/k3s_install/files/
+```
