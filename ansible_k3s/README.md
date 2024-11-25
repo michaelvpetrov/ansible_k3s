@@ -16,3 +16,6 @@ copy files to folders:
 > ./roles/k3s_agent/files/ 
 > ./roles/k3s_install/files/
 ```
+### Install the project: 
+** run ansible_autotun.sh **
+
